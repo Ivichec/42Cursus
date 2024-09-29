@@ -4,29 +4,53 @@ CC := gcc
 # Compiler flags
 CFLAGS := -Wall -Wextra -Werror
 
-# Source files
-SRCS := $(wildcard *.c)
+# Nombre de la biblioteca
+Library		= libft
 
-# Object files
-OBJS := $(SRCS:.c=.o)
+# Archivos fuente
+files := $(wildcard *.c)
 
-# Target executable
-TARGET := libft.a
+# Nombre del archivo de salida
+OUTN	= $(Library).a
 
-# Build rule
-$(TARGET): $(OBJS)
-	$(AR) rcs $@ $^
+# Lista de archivos fuente en C
+CFILES	= $(files)
 
-# Object file rule
-%.o: %.c
-	$(CC) $(CFLAGS) -c $< -o $@
+# Lista de archivos objeto
+OFILES	= $(CFILES:.c=.o)
 
-# Clean rule
+# Nombre del archivo de salida
+NAME	= $(OUTN)
+
+# Construir la biblioteca
+$(NAME): $(OFILES)
+	$(CC) $(CFLAGS) -c $(CFILES) -I./
+	ar -rc $(OUTN) $(OFILES)
+
+# Construir la biblioteca por defecto
+all: $(NAME)
+
+# Limpiar los archivos objeto
 clean:
-	rm -f $(OBJS)
+	$(RM) $(OFILES)
 
-# Clean and rebuild rule
-re: clean $(TARGET)
+# Clean object files and the library
+fclean: clean
+	$(RM) $(OUTN)
+
+# Rebuild the library
+re: fclean all
 
 # Phony targets
-.PHONY: clean re
+.PHONY: all clean fclean re
+	rm -f $(OFILES)
+
+# Clean object files and the library
+fclean: clean
+	rm -f $(NAME)
+
+# Clean object files, the library, and rebuild
+re: fclean all
+
+# Declare the targets that are not associated with files
+.PHONY: all clean fclean re

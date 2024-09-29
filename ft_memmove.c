@@ -6,11 +6,11 @@
 /*   By: icheca-g <icheca-g@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/21 14:37:32 by icheca-g          #+#    #+#             */
-/*   Updated: 2024/09/26 19:45:58 by icheca-g         ###   ########.fr       */
+/*   Updated: 2024/09/29 19:56:22 by icheca-g         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stddef.h>
+#include  "libft.h"
 void	*ft_memmove(void *dest, const void *src, size_t count)
 {
 	unsigned char *d = (unsigned char *)dest;

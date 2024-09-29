@@ -6,11 +6,11 @@
 /*   By: icheca-g <icheca-g@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/21 14:37:17 by icheca-g          #+#    #+#             */
-/*   Updated: 2024/09/26 19:44:16 by icheca-g         ###   ########.fr       */
+/*   Updated: 2024/09/29 19:57:13 by icheca-g         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stddef.h>
+#include "libft.h"
 void bzero(void *s, size_t n)
 {
 	unsigned char *p = (unsigned char *)s;
