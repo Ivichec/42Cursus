@@ -6,58 +6,56 @@
 /*   By: icheca-g <icheca-g@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/29 16:23:56 by icheca-g          #+#    #+#             */
-/*   Updated: 2024/09/29 17:11:12 by icheca-g         ###   ########.fr       */
+/*   Updated: 2024/09/30 20:07:47 by icheca-g         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-// int ft_count_words(char const *s, char c)
-// {
-// 	int i;
-// 	int count;
+#include "libft.h"
 
-// 	i = 0;
-// 	count = 0;
-// 	while (s[i])
-// 	{
-// 		if (s[i] != c)
-// 		{
-// 			count++;
-// 			while (s[i] && s[i] != c)
-// 				i++;
-// 		}
-// 		else
-// 			i++;
-// 	}
-// 	return (count);
-// }
-// char **ft_split(char const *s, char c)
-// {
-// 	char **strs;
-// 	int i;
-// 	int j;
-// 	int k;
+char **ft_split(char const *s, char c)
+{
+	char	**split;
+	size_t	s_len;
+	size_t	i;
+	size_t	j;
+	size_t	start;
 
-// 	i = 0;
-// 	j = 0;
-// 	strs = (char **)ft_calloc(ft_count_words(s, c) + 1, sizeof(char *));
-// 	if (!strs)
-// 		return (0);
-// 	while (s[i])
+	if (!s)
+		return (0);
+	s_len = ft_strlen(s);
+	split = (char **)malloc((s_len + 1) * sizeof(char *));
+	if (!split)
+		return (0);
+	i = 0;
+	j = 0;
+	while (i < s_len)
+	{
+		while (i < s_len && s[i] == c)
+			i++;
+		start = i;
+		while (i < s_len && s[i] != c)
+			i++;
+		if (i > start)
+		{
+			split[j] = ft_substr(s, start, i - start);
+			if (!split[j])
+				return (0);
+			j++;
+		}
+	}
+	split[j] = 0;
+	return (split);
+}
+
+// int main()
+// {
+// 	char *s = "Hello, World!, fsdfsdff  sfsg sfg sf gfgf";
+// 	char **split = ft_split(s, ' ');
+// 	for (int i = 0; split[i]; i++)
 // 	{
-// 		if (s[i] != c)
-// 		{
-// 			k = 0;
-// 			while (s[i + k] && s[i + k] != c)
-// 				k++;
-// 			strs[j] = (char *)ft_calloc(k + 1, sizeof(char));
-// 			if (!strs[j])
-// 				return (0);
-// 			ft_strlcpy(strs[j], s + i, k + 1);
-// 			i += k;
-// 			j++;
-// 		}
-// 		else
-// 			i++;
+// 		printf("%s\n", split[i]);
+// 		free(split[i]);
 // 	}
-// 	return (strs);
+// 	free(split);
+// 	return (0);
 // }
