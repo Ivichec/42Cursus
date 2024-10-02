@@ -6,7 +6,7 @@
 /*   By: icheca-g <icheca-g@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/29 16:23:56 by icheca-g          #+#    #+#             */
-/*   Updated: 2024/09/30 20:07:47 by icheca-g         ###   ########.fr       */
+/*   Updated: 2024/10/02 17:02:09 by icheca-g         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -47,9 +47,10 @@ char **ft_split(char const *s, char c)
 	return (split);
 }
 
+
 // int main()
 // {
-// 	char *s = "Hello, World!, fsdfsdff  sfsg sfg sf gfgf";
+// 	char *s = "           Hello, World!,      fsdfsdff  sfsg sfg sf gfgf";
 // 	char **split = ft_split(s, ' ');
 // 	for (int i = 0; split[i]; i++)
 // 	{
