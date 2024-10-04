@@ -6,17 +6,18 @@
 /*   By: icheca-g <icheca-g@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/21 14:37:44 by icheca-g          #+#    #+#             */
-/*   Updated: 2024/09/30 16:37:39 by icheca-g         ###   ########.fr       */
+/*   Updated: 2024/10/04 18:37:45 by icheca-g         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include  "libft.h"
+#include "libft.h"
+
 size_t	ft_strlen(const char *str)
 {
 	size_t	c;
 
 	c = 0;
-	while(str[c] != '\0')
+	while (str[c] != '\0')
 	{
 		c++;
 	}

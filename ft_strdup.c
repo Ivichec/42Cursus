@@ -6,16 +6,16 @@
 /*   By: icheca-g <icheca-g@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/26 20:14:40 by icheca-g          #+#    #+#             */
-/*   Updated: 2024/09/30 17:52:46 by icheca-g         ###   ########.fr       */
+/*   Updated: 2024/10/04 18:38:06 by icheca-g         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char *ft_strdup(const char *s)
+char	*ft_strdup(const char *s)
 {
-	char *dup;
-	size_t len;
+	char	*dup;
+	size_t	len;
 
 	len = ft_strlen(s) + 1;
 	dup = (char *)malloc(len);

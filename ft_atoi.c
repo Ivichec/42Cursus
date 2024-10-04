@@ -6,12 +6,12 @@
 /*   By: icheca-g <icheca-g@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/21 14:37:14 by icheca-g          #+#    #+#             */
-/*   Updated: 2024/09/26 19:08:13 by icheca-g         ###   ########.fr       */
+/*   Updated: 2024/10/04 18:31:56 by icheca-g         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-
 #include <unistd.h>
+
 int	ft_atoi(char *str)
 {
 	int	i;
