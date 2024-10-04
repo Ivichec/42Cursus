@@ -6,11 +6,12 @@
 /*   By: icheca-g <icheca-g@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/30 17:53:06 by icheca-g          #+#    #+#             */
-/*   Updated: 2024/09/30 18:54:15 by icheca-g         ###   ########.fr       */
+/*   Updated: 2024/10/04 18:26:08 by icheca-g         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
 char	*ft_substr(char const *s, unsigned int start, size_t len)
 {
 	char	*substr;

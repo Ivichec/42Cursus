@@ -6,11 +6,11 @@
 /*   By: icheca-g <icheca-g@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/21 14:37:54 by icheca-g          #+#    #+#             */
-/*   Updated: 2024/09/26 16:46:05 by icheca-g         ###   ########.fr       */
+/*   Updated: 2024/10/04 18:30:21 by icheca-g         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int ft_tolower(int ch)
+int	ft_tolower(int ch)
 {
 	if (ch >= 65 && ch <= 90)
 		return (ch + 32);

@@ -6,11 +6,11 @@
 /*   By: icheca-g <icheca-g@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/21 14:37:57 by icheca-g          #+#    #+#             */
-/*   Updated: 2024/10/02 16:55:39 by icheca-g         ###   ########.fr       */
+/*   Updated: 2024/10/04 18:30:00 by icheca-g         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int ft_toupper(int ch)
+int	ft_toupper(int ch)
 {
 	if (ch >= 97 && ch <= 122)
 		return (ch - 32);
