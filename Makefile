@@ -28,7 +28,12 @@ files 	   = ft_strlen \
 			 ft_strtrim \
 			 ft_split \
 			 ft_itoa \
-			 ft_strmapi
+			 ft_strmapi \
+			 ft_putchar_fd \
+			 ft_putstr_fd \
+			 ft_putendl_fd \
+			 ft_putnbr_fd \
+			 ft_striteri \
 Compiler	= gcc
 
 CmpFlags	= -Wall -Wextra -Werror
