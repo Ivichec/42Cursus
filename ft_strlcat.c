@@ -6,10 +6,12 @@
 /*   By: icheca-g <icheca-g@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/21 14:37:40 by icheca-g          #+#    #+#             */
-/*   Updated: 2024/10/07 17:06:12 by icheca-g         ###   ########.fr       */
+/*   Updated: 2024/10/07 17:17:09 by icheca-g         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+//Esta función concatena la cadena 'src' a la cadena 'dest' 
+// y devuelve la longitud de la cadena resultante.
 #include "libft.h"
 
 int	strlen1(char *dest)
@@ -44,18 +46,13 @@ unsigned int	ft_strlcat(char *dest, char *src, unsigned int size)
 	return (dest_len + src_len);
 }
 
-// #include <stdio.h>
-// #include <string.h>
-
-// int main() {
-//     char dest[20] = "Hello, ";
-//     char src[] = "world!";
-//     size_t size = sizeof(dest);
-
-//     size_t result = ft_strlcat(dest, src, size);
-
-//     printf("Resulting string: '%s'\n", dest);
-//     printf("Total length: %zu\n", result);
-
-//     return 0;
+// int main()
+// {
+// 	char dest[20] = "Hello, ";
+// 	char src[] = "World!";
+// 	unsigned int size = 20;
+// 	unsigned int length = ft_strlcat(dest, src, size);
+// 	printf("Destination: %s\n", dest);
+// 	printf("Length of destination: %u\n", length);
+// 	return 0;
 // }

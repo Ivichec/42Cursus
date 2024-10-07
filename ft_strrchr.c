@@ -6,7 +6,7 @@
 /*   By: icheca-g <icheca-g@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/21 14:37:52 by icheca-g          #+#    #+#             */
-/*   Updated: 2024/10/07 17:05:26 by icheca-g         ###   ########.fr       */
+/*   Updated: 2024/10/07 17:07:33 by icheca-g         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,3 +28,10 @@ char	*ft_strrchr(const char *str, int c)
 	return (0);
 }
 
+// int main()
+// {
+// 	char str[] = "Hello, World!";
+// 	char c = 'o';
+// 	printf("%s\n", ft_strrchr(str, c));
+// 	return 0;
+// }
