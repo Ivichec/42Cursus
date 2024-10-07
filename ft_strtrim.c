@@ -6,9 +6,12 @@
 /*   By: icheca-g <icheca-g@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/30 19:55:28 by icheca-g          #+#    #+#             */
-/*   Updated: 2024/10/07 17:04:45 by icheca-g         ###   ########.fr       */
+/*   Updated: 2024/10/07 17:18:08 by icheca-g         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+//Esta función reserva memoria con malloc y devuelve una nueva cadena
+// que es una copia de la cadena 's1' sin los caracteres que aparecen en 'set'.
 
 #include "libft.h"
 
