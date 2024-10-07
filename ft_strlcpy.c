@@ -6,9 +6,11 @@
 /*   By: icheca-g <icheca-g@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/21 14:37:42 by icheca-g          #+#    #+#             */
-/*   Updated: 2024/09/23 17:35:39 by icheca-g         ###   ########.fr       */
+/*   Updated: 2024/10/07 17:06:00 by icheca-g         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "libft.h"
 
 unsigned int	ft_strlcpy(char *dest, char *src, unsigned int size)
 {

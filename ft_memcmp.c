@@ -6,9 +6,11 @@
 /*   By: icheca-g <icheca-g@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/21 14:37:27 by icheca-g          #+#    #+#             */
-/*   Updated: 2024/10/07 16:56:58 by icheca-g         ###   ########.fr       */
+/*   Updated: 2024/10/07 17:06:36 by icheca-g         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "libft.h"
 
 int	ft_memcmp(const void *s1, const void *s2, unsigned int n)
 {

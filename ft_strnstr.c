@@ -6,7 +6,7 @@
 /*   By: icheca-g <icheca-g@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/21 14:37:49 by icheca-g          #+#    #+#             */
-/*   Updated: 2024/10/04 18:33:34 by icheca-g         ###   ########.fr       */
+/*   Updated: 2024/10/07 17:05:43 by icheca-g         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,3 +33,12 @@ char	*ft_strnstr(const char *cadena, const char *buscar, size_t len)
 	}
 	return (0);
 }
+
+// int main()
+// {
+// 	char cadena[] = "Hello, World!";
+// 	char buscar[] = "World";
+// 	size_t len = 5;
+// 	printf("%s\n", ft_strnstr(cadena, buscar, len));
+// 	return 0;
+// }
