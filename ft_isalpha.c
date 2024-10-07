@@ -6,9 +6,11 @@
 /*   By: icheca-g <icheca-g@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/19 16:35:10 by icheca-g          #+#    #+#             */
-/*   Updated: 2024/09/26 19:45:09 by icheca-g         ###   ########.fr       */
+/*   Updated: 2024/10/07 16:59:14 by icheca-g         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include <libft.h>
 
 int	isalpha(int c)
 {
@@ -19,20 +21,9 @@ int	isalpha(int c)
 	return (0);
 }
 
-
-// #include <stdio.h>
 // int main()
 // {
-// 	char ch;
-
-// 	// Asking user for a character input
-// 	printf("Enter a character: ");
-// 	scanf("%c", &ch);
-
-// 	// Checking if the character is alphabetic
-// 	if (isprint(ch))
-// 		printf("'%c' is true", ch);
-// 	else
-// 		printf("'%c' is false", ch);
+// 	char c = 'a';
+// 	printf("%d\n", isalpha(c));
 // 	return 0;
 // }

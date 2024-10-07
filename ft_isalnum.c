@@ -6,9 +6,11 @@
 /*   By: icheca-g <icheca-g@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/21 14:36:36 by icheca-g          #+#    #+#             */
-/*   Updated: 2024/10/07 16:09:58 by icheca-g         ###   ########.fr       */
+/*   Updated: 2024/10/07 16:59:47 by icheca-g         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include <libft.h>
 
 int	isalnum(int c)
 {
@@ -20,3 +22,10 @@ int	isalnum(int c)
 	}
 	return (0);
 }
+
+// int main()
+// {
+// 	char c = 'a';
+// 	printf("%d\n", isalnum(c));
+// 	return 0;
+// }

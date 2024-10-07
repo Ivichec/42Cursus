@@ -6,12 +6,45 @@
 /*   By: icheca-g <icheca-g@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/29 16:23:56 by icheca-g          #+#    #+#             */
-/*   Updated: 2024/10/04 18:40:46 by icheca-g         ###   ########.fr       */
+/*   Updated: 2024/10/07 16:54:28 by icheca-g         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+// #include "libft.h"
 
+// char	**ft_split(char const *s, char c)
+// {
+// 	char	**split;
+// 	size_t	i;
+// 	size_t	j;
+// 	size_t	k;
+
+// 	if (!s)
+// 		return (NULL);
+// 	split = ft_calloc(ft_strlen(s) + 1, sizeof(char *));
+// 	if (!split)
+// 		return (NULL);
+// 	i = 0;
+// 	j = 0;
+// 	while (s[i])
+// 	{
+// 		if (s[i] != c)
+// 		{
+// 			k = 0;
+// 			while (s[i + k] && s[i + k] != c)
+// 				k++;
+// 			split[j] = ft_calloc(k + 1, sizeof(char));
+// 			if (!split[j])
+// 				return (NULL);
+// 			ft_memcpy(split[j], s + i, k);
+// 			j++;
+// 			i += k;
+// 		}
+// 		else
+// 			i++;
+// 	}
+// 	return (split);
+// }
 // char	**ft_split(char const *s, char c)
 // {
 // 	char	**split;

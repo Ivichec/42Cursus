@@ -6,7 +6,7 @@
 /*   By: icheca-g <icheca-g@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/21 14:36:55 by icheca-g          #+#    #+#             */
-/*   Updated: 2024/09/26 20:12:52 by icheca-g         ###   ########.fr       */
+/*   Updated: 2024/10/07 16:58:24 by icheca-g         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,3 +18,10 @@ int	isascii(int c)
 	}
 	return (0);
 }
+
+// int main()
+// {
+// 	char c = 'a';
+// 	printf("%d\n", isascii(c));
+// 	return 0;
+// }

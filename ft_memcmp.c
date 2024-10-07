@@ -6,15 +6,15 @@
 /*   By: icheca-g <icheca-g@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/21 14:37:27 by icheca-g          #+#    #+#             */
-/*   Updated: 2024/09/26 19:25:25 by icheca-g         ###   ########.fr       */
+/*   Updated: 2024/10/07 16:56:58 by icheca-g         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int ft_memcmp(const void *s1, const void *s2, unsigned int n)
+int	ft_memcmp(const void *s1, const void *s2, unsigned int n)
 {
-	unsigned char *str1;
-	unsigned char *str2;
-	unsigned int i;
+	unsigned char	*str1;
+	unsigned char	*str2;
+	unsigned int	i;
 
 	str1 = (unsigned char *)s1;
 	str2 = (unsigned char *)s2;
