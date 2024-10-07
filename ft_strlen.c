@@ -6,7 +6,7 @@
 /*   By: icheca-g <icheca-g@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/21 14:37:44 by icheca-g          #+#    #+#             */
-/*   Updated: 2024/10/04 18:37:45 by icheca-g         ###   ########.fr       */
+/*   Updated: 2024/10/07 17:27:27 by icheca-g         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,3 +23,10 @@ size_t	ft_strlen(const char *str)
 	}
 	return (c);
 }
+
+// int main()
+// {
+// 	char s[] = "Hello, World!";
+// 	printf("%zu\n", ft_strlen(s));
+// 	return 0;
+// }

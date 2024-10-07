@@ -34,7 +34,7 @@ files 	   = ft_strlen \
 			 ft_putendl_fd \
 			 ft_putnbr_fd \
 			 ft_striteri
-Compiler	= gcc
+Compiler	= cc
 
 CmpFlags	= -Wall -Wextra -Werror
 
