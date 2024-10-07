@@ -6,21 +6,21 @@
 /*   By: icheca-g <icheca-g@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/19 16:35:10 by icheca-g          #+#    #+#             */
-/*   Updated: 2024/10/07 16:59:14 by icheca-g         ###   ########.fr       */
+/*   Updated: 2024/10/07 18:34:44 by icheca-g         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <libft.h>
-
-int	isalpha(int c)
+int	ft_isalpha(int c)
 {
-	if ((c >= 65 && c <= 90) || (c >= 97 && c <= 122))
+	if ((c >= 65 && c <= 90)
+		|| (c >= 97 && c <= 122))
 	{
 		return (1);
 	}
 	return (0);
 }
 
+// #include <stdio.h>
 // int main()
 // {
 // 	char c = 'a';

@@ -6,13 +6,13 @@
 /*   By: icheca-g <icheca-g@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/21 14:37:17 by icheca-g          #+#    #+#             */
-/*   Updated: 2024/10/07 16:11:30 by icheca-g         ###   ########.fr       */
+/*   Updated: 2024/10/07 18:35:40 by icheca-g         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	bzero(void *s, size_t n)
+void	ft_bzero(void *s, size_t n)
 {
 	unsigned char	*p;
 	size_t			i;

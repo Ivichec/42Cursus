@@ -6,13 +6,11 @@
 /*   By: icheca-g <icheca-g@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/21 14:36:36 by icheca-g          #+#    #+#             */
-/*   Updated: 2024/10/07 16:59:47 by icheca-g         ###   ########.fr       */
+/*   Updated: 2024/10/07 18:35:05 by icheca-g         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <libft.h>
-
-int	isalnum(int c)
+int	ft_isalnum(int c)
 {
 	if ((c >= 65 && c <= 90)
 		|| (c >= 97 && c <= 122)
