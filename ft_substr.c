@@ -6,10 +6,12 @@
 /*   By: icheca-g <icheca-g@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/30 17:53:06 by icheca-g          #+#    #+#             */
-/*   Updated: 2024/10/04 18:26:08 by icheca-g         ###   ########.fr       */
+/*   Updated: 2024/10/07 17:03:30 by icheca-g         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+//Esta funcion reserva memoria con malloc y
+// devuelve una nueva cadena que es una copia de la cadena 's'.
 #include "libft.h"
 
 char	*ft_substr(char const *s, unsigned int start, size_t len)
@@ -31,3 +33,12 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 	substr[len] = '\0';
 	return (substr);
 }
+
+// int main()
+// {
+// 	char *s = "Hello World!";
+// 	unsigned int start = 6;
+// 	size_t len = 5;
+// 	printf("%s\n", ft_substr(s, start, len));
+// 	return 0;
+// }

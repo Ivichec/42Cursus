@@ -6,7 +6,7 @@
 /*   By: icheca-g <icheca-g@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/21 14:37:54 by icheca-g          #+#    #+#             */
-/*   Updated: 2024/10/04 18:30:21 by icheca-g         ###   ########.fr       */
+/*   Updated: 2024/10/07 17:02:46 by icheca-g         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,3 +17,11 @@ int	ft_tolower(int ch)
 	else
 		return (ch);
 }
+
+// #include <libft.h>
+// int main()
+// {
+// 	char c = 'A';
+// 	printf("%d\n", ft_toupper(c));
+// 	return 0;
+// }

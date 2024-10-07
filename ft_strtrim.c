@@ -6,7 +6,7 @@
 /*   By: icheca-g <icheca-g@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/30 19:55:28 by icheca-g          #+#    #+#             */
-/*   Updated: 2024/10/04 18:23:33 by icheca-g         ###   ########.fr       */
+/*   Updated: 2024/10/07 17:04:45 by icheca-g         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,6 +35,7 @@ char	*ft_strtrim(char const *s1, char const *set)
 	trimmed[end - start] = '\0';
 	return (trimmed);
 }
+
 // int main()
 // {
 // 	char s[] = "Hello, World!";
