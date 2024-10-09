@@ -6,7 +6,7 @@
 /*   By: icheca-g <icheca-g@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/21 14:37:14 by icheca-g          #+#    #+#             */
-/*   Updated: 2024/10/04 18:31:56 by icheca-g         ###   ########.fr       */
+/*   Updated: 2024/10/09 18:36:18 by icheca-g         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,6 +26,8 @@ int	ft_atoi(char *str)
 		i++;
 	while (str[i] == '-' || str[i] == '+')
 	{
+		if (str[i + 1] == '-' || str[i + 1] == '+')
+			return (0);
 		if (str[i] == '-')
 			sign = sign * -1;
 		i++;
@@ -38,9 +40,10 @@ int	ft_atoi(char *str)
 	return (result * sign);
 }
 
-//#include <stdio.h>
-// int main ()
+// #include <stdio.h>
+// int main()
 // {
-// 	printf("%d", ft_atoi(" --123ab567"));
+// 	char str[] = "+-1234";
+// 	printf("%d\n", ft_atoi(str));
 // 	return 0;
 // }

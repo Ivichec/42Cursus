@@ -1,39 +1,26 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_memset.c                                        :+:      :+:    :+:   */
+/*   ft_putstr_fd.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: icheca-g <icheca-g@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/09/21 14:37:35 by icheca-g          #+#    #+#             */
-/*   Updated: 2024/10/09 16:39:06 by icheca-g         ###   ########.fr       */
+/*   Created: 2024/10/04 17:20:21 by icheca-g          #+#    #+#             */
+/*   Updated: 2024/10/04 17:25:12 by icheca-g         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-/*Esta función llena los primeros num bytes de 
-ptr con el valor especificado en value.*/
-void	*ft_memset(void *ptr, int value, size_t num)
+void	ft_putstr_fd(char *s, int fd)
 {
-	unsigned char	*p;
-
-	p = (unsigned char *)ptr;
-	if (num == 0)
-		return (ptr);
-	while (num > 0)
+	while (*s)
 	{
-		num--;
-		p[num] = value;
+		ft_putchar_fd (*s, fd);
+		s++;
 	}
-	return (ptr);
 }
-
 // int main()
 // {
-// 	char mem[15] = "Hello World!";
-// 	if (mem != ft_memset(mem, 'c', 5))
-//         write(1, "mem's adress returned\n", 30);
-//     write(1, mem, 15);
-// 	return 0;
+// 	ft_putstr_fd("Hello, World!", 2);
 // }

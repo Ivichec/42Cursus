@@ -6,7 +6,7 @@
 /*   By: icheca-g <icheca-g@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/21 14:37:49 by icheca-g          #+#    #+#             */
-/*   Updated: 2024/10/07 17:05:43 by icheca-g         ###   ########.fr       */
+/*   Updated: 2024/10/09 18:56:55 by icheca-g         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,7 +25,7 @@ char	*ft_strnstr(const char *cadena, const char *buscar, size_t len)
 	while (cadena[i] && i < len)
 	{
 		j = 0;
-		while (cadena[i + j] == buscar[j] && i + j < len)
+		while (cadena[i + j] && cadena[i + j] == buscar[j] && i + j < len)
 			j++;
 		if (!buscar[j])
 			return ((char *)&cadena[i]);

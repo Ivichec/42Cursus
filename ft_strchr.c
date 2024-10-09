@@ -6,15 +6,17 @@
 /*   By: icheca-g <icheca-g@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/21 14:37:37 by icheca-g          #+#    #+#             */
-/*   Updated: 2024/10/07 17:06:20 by icheca-g         ###   ########.fr       */
+/*   Updated: 2024/10/09 17:08:19 by icheca-g         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
+//Esta función devuelve un puntero al 
+//primer carácter 'c' en la cadena 's'.
 char	*ft_strchr(const char *s, int c)
 {
-	while (*s)
+	while (*s || *s == c)
 	{
 		if (*s == c)
 			return ((char *)s);
