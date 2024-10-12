@@ -6,7 +6,7 @@
 /*   By: icheca-g <icheca-g@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/21 14:37:57 by icheca-g          #+#    #+#             */
-/*   Updated: 2024/10/12 14:23:11 by icheca-g         ###   ########.fr       */
+/*   Updated: 2024/10/12 15:31:59 by icheca-g         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,10 +18,10 @@ int	ft_toupper(int ch)
 		return (ch);
 }
 
-#include <stdio.h>
-int main()
-{
-	char c = 'a';
-	printf("%d\n", ft_toupper(c));
-	return 0;
-}
+// #include <stdio.h>
+// int main()
+// {
+// 	char c = 'a';
+// 	printf("%d\n", ft_toupper(c));
+// 	return 0;
+// }
