@@ -6,12 +6,13 @@
 /*   By: icheca-g <icheca-g@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/02 19:58:03 by icheca-g          #+#    #+#             */
-/*   Updated: 2024/10/12 12:29:15 by icheca-g         ###   ########.fr       */
+/*   Updated: 2024/10/12 15:25:50 by icheca-g         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
+//Aplica la función 'f' a cada carácter de la cadena 's'
 void	ft_striteri(char *s, void (*f)(unsigned int, char *))
 {
 	unsigned int	i;

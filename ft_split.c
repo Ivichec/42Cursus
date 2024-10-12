@@ -6,12 +6,14 @@
 /*   By: icheca-g <icheca-g@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/29 16:23:56 by icheca-g          #+#    #+#             */
-/*   Updated: 2024/10/12 11:59:02 by icheca-g         ###   ########.fr       */
+/*   Updated: 2024/10/12 14:21:12 by icheca-g         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
+//Esta función devuelve el número de palabras 
+//en la cadena 's' delimitadas por el caracter c.
 static int	word_count(const char *s, char c)
 {
 	int	i;
@@ -35,6 +37,7 @@ static int	word_count(const char *s, char c)
 	return (count);
 }
 
+//Esta función libera la memoria de las palabras que se han separado.
 static void	free_split(char **res, int k)
 {
 	int	i;
@@ -47,6 +50,7 @@ static void	free_split(char **res, int k)
 	}
 }
 
+//Esta función llena el array de palabras que se han separado.
 static int	fill_split(const char *s, char c, char **res)
 {
 	int	cont[3];
@@ -75,6 +79,8 @@ static int	fill_split(const char *s, char c, char **res)
 	return (0);
 }
 
+//Esta función separa la cadena 's' 
+//en palabras delimitadas por el caracter 'c'.
 char	**ft_split(const char *s, char c)
 {
 	int		words;

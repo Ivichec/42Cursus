@@ -6,11 +6,14 @@
 /*   By: icheca-g <icheca-g@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/30 20:16:09 by icheca-g          #+#    #+#             */
-/*   Updated: 2024/10/02 19:32:38 by icheca-g         ###   ########.fr       */
+/*   Updated: 2024/10/12 13:39:47 by icheca-g         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
+//Esta función reserva memoria con 
+//malloc y devuelve una cadena que representa el número.
 
 static unsigned int	ft_number_size(int number)
 {
@@ -58,6 +61,8 @@ char	*ft_itoa(int n)
 
 // int main()
 // {
-//     printf("%s\n", ft_itoa(2147483648));
-//     return 0;
+// 	int n = 123456;
+// 	char *str = ft_itoa(n);
+// 	printf("%s\n", str);
+// 	return 0;
 // }

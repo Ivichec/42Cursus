@@ -6,16 +6,13 @@
 /*   By: icheca-g <icheca-g@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/21 14:37:32 by icheca-g          #+#    #+#             */
-/*   Updated: 2024/10/09 19:21:19 by icheca-g         ###   ########.fr       */
+/*   Updated: 2024/10/12 14:07:26 by icheca-g         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-//Esta funcion copia n bytes de la memoria de src a la memoria de dest.
-//La copia se realiza de forma segura, incluso si las dos áreas de 
-//memoria se superponen.
-//La función devuelve un puntero a la memoria de destino.
 #include "libft.h"
 
+//Esta función copia 'count' bytes de la memoria 'src' a la memoria 'dest'.
 void	*ft_memmove(void *dest, const void *src, size_t count)
 {
 	unsigned char		*p_str1;
@@ -34,10 +31,10 @@ void	*ft_memmove(void *dest, const void *src, size_t count)
 
 // int main()
 // {
-// 	char dest[50] = "Hello, World!";
-// 	char src[50] = "Hello, World!";
+// 	char dest[13] = " World!";
+// 	char src[12] = "Hello, World";
 // 	printf("Before ft_memmove: %s\n", dest);
-// 	ft_memmove(dest + 7, src + 7, 7);
+// 	ft_memmove(dest, src, 7);
 // 	printf("After ft_memmove: %s\n", dest);
 // 	return (0);
 // }

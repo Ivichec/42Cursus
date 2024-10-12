@@ -6,12 +6,14 @@
 /*   By: icheca-g <icheca-g@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/30 18:18:31 by icheca-g          #+#    #+#             */
-/*   Updated: 2024/10/12 12:11:10 by icheca-g         ###   ########.fr       */
+/*   Updated: 2024/10/12 14:14:23 by icheca-g         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
+//Esta función reserva memoria con malloc 
+//y devuelve una nueva cadena que es la concatenación de 's1' y 's2'.
 char	*ft_strjoin(const char *s1, const char *s2)
 {
 	char	*joined;
