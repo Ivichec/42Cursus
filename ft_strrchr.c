@@ -6,7 +6,7 @@
 /*   By: icheca-g <icheca-g@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/21 14:37:52 by icheca-g          #+#    #+#             */
-/*   Updated: 2024/10/07 17:18:30 by icheca-g         ###   ########.fr       */
+/*   Updated: 2024/10/12 12:42:08 by icheca-g         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,14 +15,16 @@
 
 char	*ft_strrchr(const char *str, int c)
 {
-	int	i;
+	int		i;
+	char	casteo;
 
 	i = 0;
+	casteo = (unsigned char)c;
 	while (str[i])
 		i++;
 	while (i >= 0)
 	{
-		if (str[i] == c)
+		if (str[i] == casteo)
 			return ((char *)&str[i]);
 		i--;
 	}

@@ -6,13 +6,13 @@
 /*   By: icheca-g <icheca-g@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/30 18:18:31 by icheca-g          #+#    #+#             */
-/*   Updated: 2024/10/09 18:48:09 by icheca-g         ###   ########.fr       */
+/*   Updated: 2024/10/12 12:11:10 by icheca-g         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char	*ft_strjoin(char const *s1, char const *s2)
+char	*ft_strjoin(const char *s1, const char *s2)
 {
 	char	*joined;
 	size_t	s1_len;

@@ -6,7 +6,7 @@
 /*   By: icheca-g <icheca-g@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/30 17:53:06 by icheca-g          #+#    #+#             */
-/*   Updated: 2024/10/07 17:03:30 by icheca-g         ###   ########.fr       */
+/*   Updated: 2024/10/12 12:48:15 by icheca-g         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,24 +14,19 @@
 // devuelve una nueva cadena que es una copia de la cadena 's'.
 #include "libft.h"
 
-char	*ft_substr(char const *s, unsigned int start, size_t len)
+char	*ft_substr(const char *s, unsigned int start, size_t len)
 {
-	char	*substr;
-	size_t	s_len;
+	char	*new_substr;
 
-	if (!s)
-		return (0);
-	s_len = ft_strlen(s);
-	if (start >= s_len)
+	if (start > ft_strlen(s))
 		return (ft_strdup(""));
-	if (s_len < len)
-		len = s_len;
-	substr = (char *)malloc(len + 1);
-	if (!substr)
+	if (len > ft_strlen(s + start))
+		len = ft_strlen(s + start);
+	new_substr = (char *)malloc((len + 1) * sizeof(char));
+	if (!new_substr)
 		return (0);
-	ft_memcpy(substr, s + start, len);
-	substr[len] = '\0';
-	return (substr);
+	ft_strlcpy(new_substr, s + start, len + 1);
+	return (new_substr);
 }
 
 // int main()

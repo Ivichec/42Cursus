@@ -6,13 +6,13 @@
 /*   By: icheca-g <icheca-g@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/04 17:20:21 by icheca-g          #+#    #+#             */
-/*   Updated: 2024/10/04 17:25:12 by icheca-g         ###   ########.fr       */
+/*   Updated: 2024/10/12 12:09:59 by icheca-g         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	ft_putstr_fd(char *s, int fd)
+void	ft_putstr_fd(const char *s, int fd)
 {
 	while (*s)
 	{
