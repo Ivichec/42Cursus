@@ -6,11 +6,9 @@
 /*   By: icheca-g <icheca-g@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/21 14:37:14 by icheca-g          #+#    #+#             */
-/*   Updated: 2024/10/15 16:33:31 by icheca-g         ###   ########.fr       */
+/*   Updated: 2024/10/15 19:41:38 by icheca-g         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
-#include <unistd.h>
 
 int	ft_atoi(const char *str)
 {
@@ -24,10 +22,8 @@ int	ft_atoi(const char *str)
 	while (str[i] == ' ' || str[i] == '\f' || str[i] == '\n'
 		|| str[i] == '\r' || str[i] == '\t' || str[i] == '\v')
 		i++;
-	while (str[i] == '-' || str[i] == '+')
+	if (str[i] == '-' || str[i] == '+')
 	{
-		if (str[i + 1] == '-' || str[i + 1] == '+')
-			return (0);
 		if (str[i] == '-')
 			sign = sign * -1;
 		i++;

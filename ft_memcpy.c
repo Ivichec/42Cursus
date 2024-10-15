@@ -6,13 +6,13 @@
 /*   By: icheca-g <icheca-g@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/21 14:37:30 by icheca-g          #+#    #+#             */
-/*   Updated: 2024/10/15 16:34:42 by icheca-g         ###   ########.fr       */
+/*   Updated: 2024/10/15 20:32:28 by icheca-g         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	*ft_memcpy(void *dest, const void *src, size_t count)
+int	*ft_memcpy(const void *dest, const void *src, size_t count)
 {
 	unsigned char	*d;
 	unsigned char	*s;

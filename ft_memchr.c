@@ -6,15 +6,15 @@
 /*   By: icheca-g <icheca-g@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/21 14:37:24 by icheca-g          #+#    #+#             */
-/*   Updated: 2024/10/15 16:34:27 by icheca-g         ###   ########.fr       */
+/*   Updated: 2024/10/15 19:27:27 by icheca-g         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	*ft_memchr(const void *s, int c, unsigned int n)
+void	*ft_memchr(const void *s, int c, size_t n)
 {
-	unsigned int	i;
+	size_t	i;
 	unsigned char	*str;
 
 	i = 0;
