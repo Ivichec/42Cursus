@@ -6,12 +6,10 @@
 /*   By: icheca-g <icheca-g@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/30 17:53:06 by icheca-g          #+#    #+#             */
-/*   Updated: 2024/10/12 12:48:15 by icheca-g         ###   ########.fr       */
+/*   Updated: 2024/10/15 16:37:47 by icheca-g         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-//Esta funcion reserva memoria con malloc y
-// devuelve una nueva cadena que es una copia de la cadena 's'.
 #include "libft.h"
 
 char	*ft_substr(const char *s, unsigned int start, size_t len)

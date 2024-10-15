@@ -6,14 +6,11 @@
 /*   By: icheca-g <icheca-g@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/26 20:12:33 by icheca-g          #+#    #+#             */
-/*   Updated: 2024/10/12 13:16:19 by icheca-g         ###   ########.fr       */
+/*   Updated: 2024/10/15 16:33:48 by icheca-g         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-
-//Esta función reserva memoria con malloc 
-//y devuelve un puntero a la memoria reservada ya inicialiazda.
 
 void	*ft_calloc(size_t num, size_t size)
 {

@@ -6,13 +6,12 @@
 /*   By: icheca-g <icheca-g@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/21 14:37:32 by icheca-g          #+#    #+#             */
-/*   Updated: 2024/10/12 14:07:26 by icheca-g         ###   ########.fr       */
+/*   Updated: 2024/10/15 16:34:48 by icheca-g         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-//Esta función copia 'count' bytes de la memoria 'src' a la memoria 'dest'.
 void	*ft_memmove(void *dest, const void *src, size_t count)
 {
 	unsigned char		*p_str1;

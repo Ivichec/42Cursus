@@ -6,13 +6,12 @@
 /*   By: icheca-g <icheca-g@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/04 17:43:20 by icheca-g          #+#    #+#             */
-/*   Updated: 2024/10/12 14:03:33 by icheca-g         ###   ########.fr       */
+/*   Updated: 2024/10/15 16:35:14 by icheca-g         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-//Esta función escribe el número 'n' en el file descriptor 'fd'.
 void	ft_putnbr_fd(int n, int fd)
 {
 	if (n == -2147483648)

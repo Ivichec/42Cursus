@@ -6,14 +6,12 @@
 /*   By: icheca-g <icheca-g@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/21 14:37:35 by icheca-g          #+#    #+#             */
-/*   Updated: 2024/10/09 16:39:06 by icheca-g         ###   ########.fr       */
+/*   Updated: 2024/10/15 16:35:05 by icheca-g         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-/*Esta función llena los primeros num bytes de 
-ptr con el valor especificado en value.*/
 void	*ft_memset(void *ptr, int value, size_t num)
 {
 	unsigned char	*p;

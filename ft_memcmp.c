@@ -6,14 +6,11 @@
 /*   By: icheca-g <icheca-g@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/21 14:37:27 by icheca-g          #+#    #+#             */
-/*   Updated: 2024/10/12 13:48:07 by icheca-g         ###   ########.fr       */
+/*   Updated: 2024/10/15 16:34:32 by icheca-g         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-
-//Esta función compara los primeros n bytes 
-//de las áreas de memoria apuntadas por s1 y s2.
 
 int	ft_memcmp(const void *s1, const void *s2, unsigned int n)
 {

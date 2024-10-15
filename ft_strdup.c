@@ -6,14 +6,12 @@
 /*   By: icheca-g <icheca-g@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/26 20:14:40 by icheca-g          #+#    #+#             */
-/*   Updated: 2024/10/09 17:11:04 by icheca-g         ###   ########.fr       */
+/*   Updated: 2024/10/15 16:36:09 by icheca-g         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-//Esta función devuelve un puntero a 
-//una nueva cadena que es una duplicación de la cadena 's'.
 char	*ft_strdup(const char *s)
 {
 	char	*dup;

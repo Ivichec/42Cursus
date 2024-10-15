@@ -6,12 +6,10 @@
 /*   By: icheca-g <icheca-g@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/21 14:37:42 by icheca-g          #+#    #+#             */
-/*   Updated: 2024/10/12 12:07:48 by icheca-g         ###   ########.fr       */
+/*   Updated: 2024/10/15 16:36:34 by icheca-g         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-//Esta función copia la cadena 'src' en la cadena 'dest'
-// y devuelve la longitud de la cadena 'src'.
 #include "libft.h"
 
 unsigned int	ft_strlcpy(char *dest, const char *src, unsigned int size)
