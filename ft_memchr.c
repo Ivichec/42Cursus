@@ -6,7 +6,7 @@
 /*   By: icheca-g <icheca-g@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/21 14:37:24 by icheca-g          #+#    #+#             */
-/*   Updated: 2024/10/15 19:27:27 by icheca-g         ###   ########.fr       */
+/*   Updated: 2024/10/17 16:47:56 by icheca-g         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 void	*ft_memchr(const void *s, int c, size_t n)
 {
-	size_t	i;
+	size_t			i;
 	unsigned char	*str;
 
 	i = 0;

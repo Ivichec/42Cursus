@@ -6,13 +6,13 @@
 /*   By: icheca-g <icheca-g@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/21 14:37:40 by icheca-g          #+#    #+#             */
-/*   Updated: 2024/10/15 19:24:04 by icheca-g         ###   ########.fr       */
+/*   Updated: 2024/10/17 18:28:33 by icheca-g         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-size_t	ft_strlcat(char *dest, const char *src,size_t size)
+size_t	ft_strlcat(char *dest, const char *src, size_t size)
 {
 	size_t	dest_len;
 	size_t	src_len;
@@ -36,11 +36,10 @@ size_t	ft_strlcat(char *dest, const char *src,size_t size)
 
 // int main()
 // {
-// 	char dest[20] = "Hello, ";
-// 	char src[] = "World!";
-// 	size_t size = 20;
-// 	size_t length = ft_strlcat(dest, src, size);
-// 	printf("Destination: %s\n", dest);
-// 	printf("Length of destination: %u\n", length);
+// 	char *dest = "hola";
+// 	char *src = " adios";
+// 	size_t size = 3;
+// 	printf("%zu", ft_strlcat(dest,src,size));
+// 	printf("%s\n", dest);
 // 	return 0;
 // }

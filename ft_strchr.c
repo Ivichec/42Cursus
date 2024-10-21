@@ -6,7 +6,7 @@
 /*   By: icheca-g <icheca-g@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/21 14:37:37 by icheca-g          #+#    #+#             */
-/*   Updated: 2024/10/15 16:35:39 by icheca-g         ###   ########.fr       */
+/*   Updated: 2024/10/17 17:24:35 by icheca-g         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 char	*ft_strchr(const char *s, int c)
 {
-	char	casteo;
+	unsigned char	casteo;
 
 	casteo = (unsigned char)c;
 	while (*s || *s == casteo)

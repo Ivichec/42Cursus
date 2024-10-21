@@ -6,7 +6,7 @@
 /*   By: icheca-g <icheca-g@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/02 19:39:36 by icheca-g          #+#    #+#             */
-/*   Updated: 2024/10/15 16:36:41 by icheca-g         ###   ########.fr       */
+/*   Updated: 2024/10/17 17:45:50 by icheca-g         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,7 @@ char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 
 	if (!s)
 		return (0);
-	new_str = (char *)malloc(ft_strlen(s) + 1);
+	new_str = (char *)malloc((ft_strlen(s) + 1) * sizeof(char));
 	if (!new_str)
 		return (0);
 	i = 0;

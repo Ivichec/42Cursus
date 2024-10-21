@@ -6,7 +6,7 @@
 /*   By: icheca-g <icheca-g@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/30 18:18:31 by icheca-g          #+#    #+#             */
-/*   Updated: 2024/10/15 16:36:24 by icheca-g         ###   ########.fr       */
+/*   Updated: 2024/10/17 17:39:54 by icheca-g         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,7 +20,7 @@ char	*ft_strjoin(const char *s1, const char *s2)
 
 	s1_len = ft_strlen(s1);
 	s2_len = ft_strlen(s2);
-	joined = (char *)malloc(s1_len + s2_len + 1);
+	joined = (char *)malloc((s1_len + s2_len + 1) * sizeof(char));
 	if (!joined)
 		return (0);
 	ft_memcpy(joined, s1, s1_len);

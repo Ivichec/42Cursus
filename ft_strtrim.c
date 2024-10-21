@@ -6,7 +6,7 @@
 /*   By: icheca-g <icheca-g@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/30 19:55:28 by icheca-g          #+#    #+#             */
-/*   Updated: 2024/10/15 16:37:39 by icheca-g         ###   ########.fr       */
+/*   Updated: 2024/10/17 19:27:08 by icheca-g         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,7 @@ char	*ft_strtrim(const char *s1, const char *set)
 	size_t	s1_len;
 	size_t	start;
 	size_t	end;
-	char	*trimmed;
+	char	*str;
 
 	if (!s1 || !set)
 		return (0);
@@ -28,18 +28,18 @@ char	*ft_strtrim(const char *s1, const char *set)
 	end = s1_len;
 	while (end > start && ft_strchr(set, s1[end - 1]))
 		end--;
-	trimmed = (char *)malloc(end - start + 1);
-	if (!trimmed)
+	str = (char *)malloc(end - start + 1);
+	if (!str)
 		return (0);
-	ft_memcpy(trimmed, s1 + start, end - start);
-	trimmed[end - start] = '\0';
-	return (trimmed);
+	ft_memcpy(str, s1 + start, end - start);
+	str[end - start] = '\0';
+	return (str);
 }
 
 // int main()
 // {
 // 	char s[] = "Hello, World!";
 // 	char set[] = "Hello, ";
-// 	char *trimmed = ft_strtrim(s, set);
-// 	printf("%s\n", trimmed);
+// 	char *str = ft_strtrim(s, set);
+// 	printf("%s\n", str);
 // }

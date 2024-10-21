@@ -6,7 +6,7 @@
 /*   By: icheca-g <icheca-g@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/29 16:23:56 by icheca-g          #+#    #+#             */
-/*   Updated: 2024/10/15 16:33:21 by icheca-g         ###   ########.fr       */
+/*   Updated: 2024/10/17 19:16:10 by icheca-g         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,16 +21,16 @@ static int	word_count(const char *s, char c)
 	i = 0;
 	count = 0;
 	flag = 0;
-	while (*(s + i))
+	while (s[i])
 	{
-		if (*(s + i) == c)
+		if (s[i] == c)
 			flag = 0;
 		else if (flag == 0)
 		{
 			flag = 1;
-			++count;
+			count++;
 		}
-		++i;
+		i++;
 	}
 	return (count);
 }
@@ -53,13 +53,13 @@ static int	fill_split(const char *s, char c, char **res)
 
 	cont[0] = 0;
 	cont[2] = 0;
-	while (*(s + cont[0]))
+	while (s[cont[0]])
 	{
-		while (*(s + cont[0]) == c)
-			++cont[0];
+		while (s[cont[0]] == c)
+			cont[0]++;
 		cont[1] = 0;
-		while (*(s + cont[0] + cont[1]) && *(s + cont[0] + cont[1]) != c)
-			++cont[1];
+		while (s[cont[0] + cont[1]] && s[cont[0] + cont[1]] != c)
+			cont[1]++;
 		if (cont[1] > 0)
 		{
 			res[cont[2]] = ft_substr(s, cont[0], cont[1]);
@@ -68,7 +68,7 @@ static int	fill_split(const char *s, char c, char **res)
 				free_split(res, cont[2]);
 				return (-1);
 			}
-			++cont[2];
+			cont[2]++;
 		}
 		cont[0] += cont[1];
 	}
@@ -82,13 +82,13 @@ char	**ft_split(const char *s, char c)
 
 	words = word_count(s, c);
 	res = (char **) malloc((words + 1) * sizeof(char *));
-	if (res == NULL)
-		return (NULL);
-	res[words] = NULL;
+	if (res == 0)
+		return (0);
+	res[words] = 0;
 	if (fill_split(s, c, res) == -1)
 	{
 		free(res);
-		return (NULL);
+		return (0);
 	}
 	return (res);
 }

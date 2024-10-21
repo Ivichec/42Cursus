@@ -6,7 +6,7 @@
 /*   By: icheca-g <icheca-g@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/21 14:37:32 by icheca-g          #+#    #+#             */
-/*   Updated: 2024/10/15 16:34:48 by icheca-g         ###   ########.fr       */
+/*   Updated: 2024/10/17 19:42:57 by icheca-g         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,10 +17,12 @@ void	*ft_memmove(void *dest, const void *src, size_t count)
 	unsigned char		*p_str1;
 	unsigned const char	*p_str2;
 
-	if (dest < src)
-		return (ft_memcpy(dest, src, count));
 	p_str1 = (unsigned char *)dest;
 	p_str2 = (unsigned const char *)src;
+	if (!dest && !src)
+		return (0);
+	if (dest < src)
+		return (ft_memcpy(dest, src, count));
 	if (!count || dest == src)
 		return (dest);
 	while (count--)
